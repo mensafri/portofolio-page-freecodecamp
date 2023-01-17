@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #header {
+    padding: 10px;
+    background: purple;
+    top: 0;
+    left: 0;
+  }
+  
+  #navbar {
+    position: fixed;
+    width: 100%;
+    background: purple;
+    top: 0;
+    left: 0;
+  }
+  
+  #navbar ul{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  li {
+    margin: 10px;
+    list-style-type: none;
+    background: purple;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  #welcome-section, #projects,  #profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  }
+  
+  @media only screen and (max-width:720px){
+      #welcome-section, #projects,  #profile {
+        width: 60vh;
+        height: 20vh;
+      }
+  }
